@@ -1,0 +1,37 @@
+{
+  "license": {
+    "id": "uuid",
+    "hash": "some hash",
+    "md5" : "md5 of license_content",
+    "properties": {
+        "license_name": {
+            "type": "string"
+        },
+        "license_uri": {
+            "type": "string"
+        },
+        "license_content": {
+            "type": "text"
+        },
+        "license_version": {
+            "type": "string"
+        },
+        "license_date": {
+            "type": "datetime"
+        },
+        "license_vendor": {
+            "description": "vendor name",
+            "type": "string"
+        },
+        "restrictions_use": {
+            "description": "license specific restrictions in an array",
+            "type": "array"
+        },
+        "restrictions_geo": {
+            "description": "license specific geo restrictions in an array",
+            "type": "array"
+        }
+    }
+    },
+    "required": ["id", "md5", "license_name", "license_uri", "license_version"]
+}
